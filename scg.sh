@@ -118,7 +118,7 @@ calendar_string=""
 
 # build html structure with some simple css for -l and -c flags
 if [[ $output -eq 1 ]]; then
-	calendar_string+="<!DOCTYPE html>\n<html>\n<head>\n<style>\nbody {\n\tfont-family: 'Courier';\n}\n"
+	calendar_string+="<!DOCTYPE html>\n<html>\n<head>\n<style>\nbody {\n\tfont-family: 'Courier', monospace;\n}\n"
 	if [[ $lines -gt 0 ]]; then
 		calendar_string+=".u {\n\ttext-decoration: underline;\n}\n"
 	fi
